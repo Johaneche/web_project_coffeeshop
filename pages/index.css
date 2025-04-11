@@ -62,14 +62,14 @@
 
 /************ Contenido ***************/
 
-.header__content {
+/* .header__content {
   min-height: 720px;
   max-height: 800px;
   height: 100vh;
 
   display: flex;
   justify-content: center;
-}
+} */
 
 .header__title {
   max-width: 709px;
