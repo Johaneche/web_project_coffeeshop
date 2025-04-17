@@ -66,7 +66,6 @@
   min-height: 720px;
   max-height: 800px;
   height: 100vh;
-
   display: flex;
   justify-content: center;
 } */
@@ -215,4 +214,109 @@
   color: #ffffff;
 
   padding-top: 24px;
+}
+
+/************ Reservar ***************/
+.reservation {
+  height: 100vh;
+  min-height: 720px;
+  max-height: 800px;
+
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: #d9e7ff;
+  background-image: url("/images/background_reservation.svg");
+  background-size: cover;
+}
+
+.reservation__form {
+}
+
+.reservation__title {
+  /* position: relative;
+  top: 100px; */
+  /* margin: 0; */
+
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 52px;
+}
+
+.form__admin {
+  max-width: 385px;
+  position: relative;
+  top: 80px;
+}
+.form__item {
+  width: 100%;
+}
+
+.form__fieldset {
+}
+
+.form__label {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+
+  display: flex;
+}
+
+.form__item_el_name {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.form__button {
+  background-color: #2f80ed;
+  color: #ffffff;
+  border-radius: 4px;
+
+  height: 60px;
+  width: 100%;
+
+  border-bottom: 1px solid #2f80ed;
+
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.form__button:hover {
+  opacity: 70%;
+}
+
+.form__item {
+  height: 60px;
+  margin-top: 8px;
+  margin-bottom: 32px;
+}
+
+.form__item_el_terms {
+  height: 20px;
+  width: 20px;
+}
+
+.form__label_direction_right {
+  margin-left: 12px;
+  display: inline;
+}
+
+.form__handlers {
+  justify-content: center;
+  flex-wrap: wrap;
+  display: flex;
 }
