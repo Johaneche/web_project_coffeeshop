@@ -152,21 +152,19 @@
   background-color: #0a2750;
   background-image: url("/images/background_recipes.svg");
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 
-  position: relative;
+  padding: 100px 80px 215px;
 
-  height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
 }
 
 .recipes__title {
   max-width: 580px;
   margin: 0;
-
-  position: absolute;
-  top: 100px;
-  left: 80px;
 
   font-family: Inter, Arial, sans-serif;
   font-style: normal;
@@ -178,11 +176,8 @@
 
 .recipes__subtitle {
   max-width: 438px;
-  margin: 0;
 
-  position: absolute;
-  top: 176px;
-  left: 80px;
+  margin-top: 24px;
 
   font-family: "Noto Serif", "Times New Roman", Times, serif;
   font-style: normal;
@@ -194,10 +189,13 @@
 
 .recipes__videos {
   display: flex;
+  margin: 80px auto 215px;
+  padding: 0;
+
   gap: 40px;
 
-  position: absolute;
-  bottom: 215px;
+  /* position: absolute;
+  bottom: 215px; */
 }
 
 .video-iframe {
@@ -218,15 +216,11 @@
 
 /************ Reservar ***************/
 .reservation {
-  height: 100vh;
-  min-height: 720px;
-  max-height: 800px;
-
-  position: relative;
-
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  padding: 100px 80px 120px;
 
   background-color: #d9e7ff;
   background-image: url("/images/background_reservation.svg");
@@ -286,7 +280,7 @@
   height: 60px;
   width: 100%;
 
-  border-bottom: 1px solid #2f80ed;
+  border: none;
 
   font-family: Inter;
   font-style: normal;
@@ -310,9 +304,11 @@
   width: 20px;
 }
 
-.form__label_direction_right {
-  margin-left: 12px;
-  display: inline;
+.form__label_type_checkbox {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  column-gap: 8px;
 }
 
 .form__handlers {
