@@ -10,7 +10,6 @@
     <meta name="keywords" content="html, css, javascript" />
     <meta name="author" content="Johan Echeverry" />
 
-    <link rel="stylesheet" href="./vendor/normalize.css" />
     <link rel="stylesheet" href="./pages/index.css" />
 
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
@@ -50,7 +49,7 @@
               <a class="nav__link" href="#reservation">Reservar una mesa</a>
             </li>
             <li>
-              <a class="nav__link" href="#">Contactos</a>
+              <a class="nav__link" href="#footer">Contactos</a>
             </li>
           </ul>
         </nav>
@@ -86,10 +85,10 @@
       </header>
       <main class="content">
         <section id="recipes" class="recipes">
-          <div class="recipes__title">
+          <h2 class="recipes__title">
             Recetas
             <!-- <h2>Recetas</h2> -->
-          </div>
+          </h2>
 
           <div class="recipes__subtitle">
             Echa un vistazo a las recetas que hemos reunido para que elabores
@@ -110,7 +109,10 @@
                   allowfullscreen
                 ></iframe>
               </div>
-              <div class="video-caption">Receta en Aeropress ~5 min</div>
+              <div class="video-caption">
+                <p>Receta en Aeropress</p>
+                <p>~5 min</p>
+              </div>
             </div>
             <div class="video-item">
               <div class="video-iframe">
@@ -126,7 +128,8 @@
                 ></iframe>
               </div>
               <div class="video-caption">
-                Receta en cafetera francesa ~15 min
+                <p>Receta en cafetera francesa</p>
+                <p>~15 min</p>
               </div>
             </div>
           </div>
@@ -195,7 +198,48 @@
           </form>
         </section>
       </main>
-      <footer class="footer"></footer>
+
+      <footer id="footer" class="footer">
+        <div class="footer__circle"></div>
+
+        <div class="footer__content">
+          <!-- Primera Columna: Logo-->
+          <img
+            class="footer__logo"
+            src="/images/logo_coffeeshop_light.svg"
+            alt="Aqui debe de carga un Logo"
+          />
+
+          <!-- Segunda Columna: Redes Sociales-->
+          <div class="footer__social">
+            <h3 class="footer__social-heading">Redes Sociales</h3>
+            <ul class="footer__list">
+              <li class="footer__list-item">
+                <a class="footer__social-link" href="#">
+                  <img
+                    class="footer__social-icon"
+                    src="/images/facebook_white.svg"
+                    alt="Icono de Facebook"
+                  />
+                  Facebook
+                </a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__social-link" href="#">
+                  <img
+                    class="footer__social-icon"
+                    src="/images/instagram_white.svg"
+                    alt="Icono de Instagram"
+                  />
+                  Instagram
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <p class="footer__copyright">© 2025 Johan Manuel Echeverry</p>
+      </footer>
     </div>
   </body>
 </html>
